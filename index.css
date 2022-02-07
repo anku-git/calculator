@@ -1,0 +1,104 @@
+*{
+    margin:0%;
+    padding: 0%;
+
+}
+body{
+    /* background-color: red; */
+    background-image:url("img//background2.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+   
+}
+.calcu{
+    background-color: #A9C9FF;
+    background-image: linear-gradient(180deg, #A9C9FF 0%, #FFBBEC 100%);
+    height:600px;
+    width:700px;
+    display: flex;
+    margin:  100px auto ;
+    border-radius: 20px;
+   
+   
+}
+#marks-calcu{
+    padding:13px;
+    margin:30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: calcu 3s ease-out 0s alternate infinite none running;
+    
+}
+::-webkit-input-placeholder{
+    color:rgba(255, 255, 255, 0.897);
+    font-size: 124%;
+}
+@keyframes calcu{
+     0%{color:rgb(19, 40, 230);
+}
+25%{
+    color:red;
+}
+75%{
+    color:aqua;
+    
+
+}
+100%{
+    color:rgb(51, 19, 230);
+
+}
+}
+#navi{
+    margin: 10px 12px;
+    padding: 34px;
+
+}
+.number-store input{
+    padding:  14px 45px;
+    margin: 24px;
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none; 
+    border-bottom-style: solid rgba(253, 251, 251, 0.945);
+    background-color:rgba(29, 28, 28, 0.973);
+    color:rgb(233, 233, 233);
+    font-size: 18px;
+    border-radius: 0%;
+}
+input:hover{
+cursor: pointer;
+
+
+}
+input:focus{
+    outline: none;
+}
+ nav .btn{
+   float: right;
+   margin: 4px;
+   padding: 8px 10px;
+   font-size: 18px;
+   border-radius: 9px;
+   background: linear-gradient(rgba(211, 71, 188, 0.959), rgb(91, 215, 231));
+   color:rgb(241, 229, 229);
+    
+}
+nav .btn:hover{
+    cursor:pointer;
+}
+#showData{
+    color: rgb(42, 184, 231);
+    font-size: 20px;
+}
+.app-form-group-showdata{
+    margin-top:64px;
+    
+  
+}
+@media  only screen and (max-width:500px){
+    .main .calcu {
+        width:100px;
+    }
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>student grade calcy</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <script src="index.js"></script>
+    <div class="main">
+        <div class="calcu">
+            <div id="marks-calcu">
+                <h1>STUDENTS GRADE CALCY</h1>
+            </div>
+            <nav id="navi">
+                <div class="number-store">
+                    <input type="text" placeholder="web programming" id="web"
+                     onkeypress="return onlyNumberKey(event)">
+                </div>
+                <div class="number-store">
+                    <input type="text" placeholder="maths" id="math"
+                    onkeypress="return onlyNumberKey(event)">
+                </div>
+                <div class="number-store">
+                    <input type="text" placeholder="computer" id="comp"
+                    onkeypress="return onlyNumberKey(event)">
+                </div>
+                <div class="number-store">
+                    <input type="text" placeholder="electronic" id="elec"
+                    onkeypress="return onlyNumberKey(event)">
+                </div>
+                <div>
+               <input type="button"  class="btn"name="" value="showPercentage"
+                onclick="GradeCalculate()">
+            </div>
+                <div class=" app-form-group-showdata">
+                    <p id="showData"></p>
+                    </div>
+            </nav>
+            
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
